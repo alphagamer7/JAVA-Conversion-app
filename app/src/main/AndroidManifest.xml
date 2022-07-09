@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.athif.unitconverter">
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UnitConverter">
+        <activity
+            android:name="com.athif.unitconverter.LauncherActivity"
+            android:exported="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.athif.unitconverter.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.athif.unitconverter.LengthActivity"
+            android:exported="false"
+            android:parentActivityName="com.athif.unitconverter.MainActivity" />
+        <activity
+            android:name="com.athif.unitconverter.SpeedActivity"
+            android:exported="false"
+            android:parentActivityName="com.athif.unitconverter.MainActivity" />
+        <activity
+            android:name="com.athif.unitconverter.AreaActivity"
+            android:exported="false"
+            android:parentActivityName="com.athif.unitconverter.MainActivity" />
+        <activity
+            android:name="com.athif.unitconverter.TemperatureActivity"
+            android:exported="false"
+            android:parentActivityName="com.athif.unitconverter.MainActivity" />
+        <activity
+            android:name="com.athif.unitconverter.MassActivity"
+            android:exported="false"
+            android:parentActivityName="com.athif.unitconverter.MainActivity"/>
+        <activity
+            android:name="com.athif.unitconverter.FrequencyActivity"
+            android:exported="false"
+            android:parentActivityName="com.athif.unitconverter.MainActivity"/>
+    </application>
+
+</manifest>
